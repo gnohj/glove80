@@ -961,25 +961,25 @@ behaviors {
 
         layer_Base {
             bindings = <
-//    ┌─────────────┬─────┬─────┬─────┬──────┐                                                                       ┌─────┬──────┬─────┬─────┬──────────────────────┐
-//    │             │     │     │     │      │                                                                       │     │      │     │     │                      │
-//    ├─────────────┼─────┼─────┼─────┼──────┼─────┐                                                                 ├─────┼──────┼─────┼─────┼──────────────────────┼─────────────┐
-//    │             │     │     │     │      │     │                                                                 │     │      │     │     │                      │             │
-//    ├─────────────┼─────┼─────┼─────┼──────┼─────┤                                                                 ├─────┼──────┼─────┼─────┼──────────────────────┼─────────────┤
-//    │ mt ralt tab │  Q  │  W  │  E  │  R   │  T  │                                                                 │  Y  │  U   │  I  │  O  │          P           │ mt lalt esc │
-//    ├─────────────┼─────┼─────┼─────┼──────┼─────┤                                                                 ├─────┼──────┼─────┼─────┼──────────────────────┼─────────────┤
-//    │  mt lctl `  │  A  │  S  │  D  │  F   │  G  │                                                                 │  H  │  J   │  K  │  L  │      mt rctl ;       │  mt lgui '  │
-//    ├─────────────┼─────┼─────┼─────┼──────┼─────┼──────┬─────────────────┬─────┐   ┌─────┬──────────────────┬─────┼─────┼──────┼─────┼─────┼──────────────────────┼─────────────┤
-//    │  &sk lsft   │  Z  │  X  │  C  │  V   │  B  │      │                 │     │   │     │                  │     │  N  │  M   │  ,  │  .  │ &right_pinky HYPER / │  &sk rsft   │
-//    ├─────────────┼─────┼─────┼─────┼──────┼─────┼──────┼─────────────────┼─────┤   ├─────┼──────────────────┼─────┼─────┼──────┼─────┼─────┼──────────────────────┼─────────────┤
-//    │             │     │     │     │ lgui │     │ mo 1 │ &thumb lalt ent │     │   │     │ &thumb rctl bspc │ spc │     │ mo 2 │     │     │                      │             │
-//    └─────────────┴─────┴─────┴─────┴──────┘     └──────┴─────────────────┴─────┘   └─────┴──────────────────┴─────┘     └──────┴─────┴─────┴──────────────────────┴─────────────┘
-  &none             &none   &none   &none   &none                                                                                                   &none   &none   &none       &none     &none
-  &none             &none   &none   &none   &none      &none                                                                                        &none   &none   &none       &none     &none                      &none
-  &mt RALT TAB      &kp Q   &kp W   &kp E   &kp R      &kp T                                                                                        &kp Y   &kp U   &kp I       &kp O     &kp P                      &mt LALT ESC
-  &mt LCTRL GRAVE   &kp A   &kp S   &kp D   &kp F      &kp G                                                                                        &kp H   &kp J   &kp K       &kp L     &mt RCTRL SEMI             &mt LGUI SQT
-  &sk LSHFT         &kp Z   &kp X   &kp C   &kp V      &kp B   &none   &none               &none       &none   &none                    &none       &kp N   &kp M   &kp COMMA   &kp DOT   &right_pinky HYPER SLASH   &sk RSHFT
-  &none             &none   &none   &none   &kp LGUI           &mo 1   &thumb LALT ENTER   &none       &none   &thumb RCTRL BACKSPACE   &kp SPACE           &mo 2   &none       &none     &none                      &none
+//    ┌────────────────────────┬─────┬─────┬─────┬──────┐                                                                       ┌─────┬──────┬─────┬─────┬──────────────────────┐
+//    │                        │     │     │     │      │                                                                       │     │      │     │     │                      │
+//    ├────────────────────────┼─────┼─────┼─────┼──────┼─────┐                                                                 ├─────┼──────┼─────┼─────┼──────────────────────┼─────────────┐
+//    │                        │     │     │     │      │     │                                                                 │     │      │     │     │                      │             │
+//    ├────────────────────────┼─────┼─────┼─────┼──────┼─────┤                                                                 ├─────┼──────┼─────┼─────┼──────────────────────┼─────────────┤
+//    │      mt ralt tab       │  Q  │  W  │  E  │  R   │  T  │                                                                 │  Y  │  U   │  I  │  O  │          P           │ mt lalt esc │
+//    ├────────────────────────┼─────┼─────┼─────┼──────┼─────┤                                                                 ├─────┼──────┼─────┼─────┼──────────────────────┼─────────────┤
+//    │       mt lctl `        │  A  │  S  │  D  │  F   │  G  │                                                                 │  H  │  J   │  K  │  L  │      mt rctl ;       │  mt lgui '  │
+//    ├────────────────────────┼─────┼─────┼─────┼──────┼─────┼──────┬─────────────────┬─────┐   ┌─────┬──────────────────┬─────┼─────┼──────┼─────┼─────┼──────────────────────┼─────────────┤
+//    │        &sk lsft        │  Z  │  X  │  C  │  V   │  B  │      │                 │     │   │     │                  │     │  N  │  M   │  ,  │  .  │ &right_pinky HYPER / │  &sk rsft   │
+//    ├────────────────────────┼─────┼─────┼─────┼──────┼─────┼──────┼─────────────────┼─────┤   ├─────┼──────────────────┼─────┼─────┼──────┼─────┼─────┼──────────────────────┼─────────────┤
+//    │ &magic laltYER_Magic 0 │     │     │     │ lgui │     │ mo 1 │ &thumb lalt ent │     │   │     │ &thumb rctl bspc │ spc │     │ mo 2 │     │     │                      │             │
+//    └────────────────────────┴─────┴─────┴─────┴──────┘     └──────┴─────────────────┴─────┘   └─────┴──────────────────┴─────┘     └──────┴─────┴─────┴──────────────────────┴─────────────┘
+  &none                  &none   &none   &none   &none                                                                                                   &none   &none   &none       &none     &none
+  &none                  &none   &none   &none   &none      &none                                                                                        &none   &none   &none       &none     &none                      &none
+  &mt RALT TAB           &kp Q   &kp W   &kp E   &kp R      &kp T                                                                                        &kp Y   &kp U   &kp I       &kp O     &kp P                      &mt LALT ESC
+  &mt LCTRL GRAVE        &kp A   &kp S   &kp D   &kp F      &kp G                                                                                        &kp H   &kp J   &kp K       &kp L     &mt RCTRL SEMI             &mt LGUI SQT
+  &sk LSHFT              &kp Z   &kp X   &kp C   &kp V      &kp B   &none   &none               &none       &none   &none                    &none       &kp N   &kp M   &kp COMMA   &kp DOT   &right_pinky HYPER SLASH   &sk RSHFT
+  &magic LAYER_Magic 0   &none   &none   &none   &kp LGUI           &mo 1   &thumb LALT ENTER   &none       &none   &thumb RCTRL BACKSPACE   &kp SPACE           &mo 2   &none       &none     &none                      &none
             >;
         };
 
@@ -1009,25 +1009,25 @@ behaviors {
 
         layer_Raise {
             bindings = <
-//    ┌────────────┬────────────────────────┬─────┬─────┬─────┐                                             ┌─────────────────┬──────────────────┬──────────────────┬─────────────────┬───────────────┐
-//    │            │                        │     │     │     │                                             │                 │                  │                  │                 │               │
-//    ├────────────┼────────────────────────┼─────┼─────┼─────┼─────┐                                       ├─────────────────┼──────────────────┼──────────────────┼─────────────────┼───────────────┼───────────────┐
-//    │            │                        │     │     │     │     │                                       │                 │                  │                  │                 │               │               │
-//    ├────────────┼────────────────────────┼─────┼─────┼─────┼─────┤                                       ├─────────────────┼──────────────────┼──────────────────┼─────────────────┼───────────────┼───────────────┤
-//    │   bt_clr   │ &magic laltYER_Magic 0 │     │     │ f11 │ f12 │                                       │ BROWSER_PREVtab │ BROWSER_PREVPAGE │ BROWSER_NEXTPAGE │ BROWSER_NEXTtab │ lalt(lsft(=)) │ lalt(lsft(-)) │
-//    ├────────────┼────────────────────────┼─────┼─────┼─────┼─────┤                                       ├─────────────────┼──────────────────┼──────────────────┼─────────────────┼───────────────┼───────────────┤
-//    │   bt_nxt   │           f1           │ f2  │ f3  │ f4  │ f5  │                                       │      left       │       down       │        up        │      rght       │    lgui(-)    │    lgui(=)    │
-//    ├────────────┼────────────────────────┼─────┼─────┼─────┼─────┼─────┬─────┬─────┐   ┌─────┬─────┬─────┼─────────────────┼──────────────────┼──────────────────┼─────────────────┼───────────────┼───────────────┤
-//    │ bt_clr_ALL │           f6           │ f7  │ f8  │ f9  │ f10 │     │     │     │   │     │     │     │      prev       │       mute       │       vold       │      volu       │     next      │     play      │
-//    ├────────────┼────────────────────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────────────────┼──────────────────┼──────────────────┼─────────────────┼───────────────┼───────────────┤
-//    │            │                        │     │     │     │     │     │     │     │   │     │     │     │                 │                  │                  │                 │               │               │
-//    └────────────┴────────────────────────┴─────┴─────┴─────┘     └─────┴─────┴─────┘   └─────┴─────┴─────┘                 └──────────────────┴──────────────────┴─────────────────┴───────────────┴───────────────┘
-  &none            &none                  &none    &none    &none                                                                       &none                 &none                  &none                  &none                 &none
-  &none            &none                  &none    &none    &none     &none                                                             &none                 &none                  &none                  &none                 &none               &none
-  &bt BT_CLR       &magic LAYER_Magic 0   &none    &none    &kp F11   &kp F12                                                           &kp BROWSER_PREVTAB   &kp BROWSER_PREVPAGE   &kp BROWSER_NEXTPAGE   &kp BROWSER_NEXTTAB   &kp LA(LS(EQUAL))   &kp LA(LS(MINUS))
-  &bt BT_NXT       &kp F1                 &kp F2   &kp F3   &kp F4    &kp F5                                                            &kp LEFT              &kp DOWN               &kp UP                 &kp RIGHT             &kp LG(MINUS)       &kp LG(EQUAL)
-  &bt BT_CLR_ALL   &kp F6                 &kp F7   &kp F8   &kp F9    &kp F10   &none    &none    &none       &none   &none    &none    &kp C_PREV            &kp C_MUTE             &kp C_VOL_DN           &kp C_VOL_UP          &kp C_NEXT          &kp C_PP
-  &none            &none                  &none    &none    &trans              &trans   &trans   &none       &none   &trans   &trans                         &trans                 &none                  &none                 &none               &none
+//    ┌─────┬─────┬─────┬──────┬─────┐                                             ┌─────────────────┬──────────────────┬──────────────────┬─────────────────┬───────────────┐
+//    │     │     │     │      │     │                                             │                 │                  │                  │                 │               │
+//    ├─────┼─────┼─────┼──────┼─────┼─────┐                                       ├─────────────────┼──────────────────┼──────────────────┼─────────────────┼───────────────┼───────────────┐
+//    │     │     │     │      │     │     │                                       │                 │                  │                  │                 │               │               │
+//    ├─────┼─────┼─────┼──────┼─────┼─────┤                                       ├─────────────────┼──────────────────┼──────────────────┼─────────────────┼───────────────┼───────────────┤
+//    │     │     │     │      │     │     │                                       │ BROWSER_PREVtab │ BROWSER_PREVPAGE │ BROWSER_NEXTPAGE │ BROWSER_NEXTtab │ lalt(lsft(=)) │ lalt(lsft(-)) │
+//    ├─────┼─────┼─────┼──────┼─────┼─────┤                                       ├─────────────────┼──────────────────┼──────────────────┼─────────────────┼───────────────┼───────────────┤
+//    │     │ f1  │ f2  │ caps │     │     │                                       │      left       │       down       │        up        │      rght       │    lgui(-)    │    lgui(=)    │
+//    ├─────┼─────┼─────┼──────┼─────┼─────┼─────┬─────┬─────┐   ┌─────┬─────┬─────┼─────────────────┼──────────────────┼──────────────────┼─────────────────┼───────────────┼───────────────┤
+//    │     │     │     │      │     │     │     │     │     │   │     │     │     │      prev       │       mute       │       vold       │      volu       │     next      │     play      │
+//    ├─────┼─────┼─────┼──────┼─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────────────────┼──────────────────┼──────────────────┼─────────────────┼───────────────┼───────────────┤
+//    │     │     │     │      │     │     │     │     │     │   │     │     │     │                 │                  │                  │                 │               │               │
+//    └─────┴─────┴─────┴──────┴─────┘     └─────┴─────┴─────┘   └─────┴─────┴─────┘                 └──────────────────┴──────────────────┴─────────────────┴───────────────┴───────────────┘
+  &none   &none    &none    &none      &none                                                                    &none                 &none                  &none                  &none                 &none
+  &none   &none    &none    &none      &none    &none                                                           &none                 &none                  &none                  &none                 &none               &none
+  &none   &none    &none    &none      &none    &none                                                           &kp BROWSER_PREVTAB   &kp BROWSER_PREVPAGE   &kp BROWSER_NEXTPAGE   &kp BROWSER_NEXTTAB   &kp LA(LS(EQUAL))   &kp LA(LS(MINUS))
+  &none   &kp F1   &kp F2   &kp CAPS   &none    &none                                                           &kp LEFT              &kp DOWN               &kp UP                 &kp RIGHT             &kp LG(MINUS)       &kp LG(EQUAL)
+  &none   &none    &none    &none      &none    &none   &none    &none    &none       &none   &none    &none    &kp C_PREV            &kp C_MUTE             &kp C_VOL_DN           &kp C_VOL_UP          &kp C_NEXT          &kp C_PP
+  &none   &none    &none    &none      &trans           &trans   &trans   &none       &none   &trans   &trans                         &trans                 &none                  &none                 &none               &none
             >;
         };
 
@@ -1038,7 +1038,7 @@ behaviors {
 //    ├────────────┼─────────┼─────────┼─────────┼─────────┼─────────┐                                                ├─────┼─────┼─────┼─────┼────────────┼────────────┐
 //    │            │         │         │         │         │         │                                                │     │     │     │     │            │            │
 //    ├────────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                                                ├─────┼─────┼─────┼─────┼────────────┼────────────┤
-//    │            │ ug_ sp+ │ ug_ sa+ │ ug_ hu+ │ ug_ br+ │ ug_ tog │                                                │     │     │     │     │            │            │
+//    │   bt_nxt   │ ug_ sp+ │ ug_ sa+ │ ug_ hu+ │ ug_ br+ │ ug_ tog │                                                │     │     │     │     │            │            │
 //    ├────────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                                                ├─────┼─────┼─────┼─────┼────────────┼────────────┤
 //    │    boot    │ ug_ sp- │ ug_ sa- │ ug_ hu- │ ug_ br- │ ug_ eff │                                                │     │     │     │     │            │    boot    │
 //    ├────────────┼─────────┼─────────┼─────────┼─────────┼─────────┼───────┬───────┬──────────┐   ┌─────┬─────┬─────┼─────┼─────┼─────┼─────┼────────────┼────────────┤
@@ -1048,7 +1048,7 @@ behaviors {
 //    └────────────┴─────────┴─────────┴─────────┴─────────┘         └───────┴───────┴──────────┘   └─────┴─────┴─────┘     └─────┴─────┴─────┴────────────┴────────────┘
   &bt BT_CLR    &none             &none             &none             &none                                                                                          &none   &none   &none   &none   &bt BT_CLR_ALL
   &none         &none             &none             &none             &none             &none                                                                        &none   &none   &none   &none   &none            &none
-  &none         &rgb_ug RGB_SPI   &rgb_ug RGB_SAI   &rgb_ug RGB_HUI   &rgb_ug RGB_BRI   &rgb_ug RGB_TOG                                                              &none   &none   &none   &none   &none            &none
+  &bt BT_NXT    &rgb_ug RGB_SPI   &rgb_ug RGB_SAI   &rgb_ug RGB_HUI   &rgb_ug RGB_BRI   &rgb_ug RGB_TOG                                                              &none   &none   &none   &none   &none            &none
   &bootloader   &rgb_ug RGB_SPD   &rgb_ug RGB_SAD   &rgb_ug RGB_HUD   &rgb_ug RGB_BRD   &rgb_ug RGB_EFF                                                              &none   &none   &none   &none   &none            &bootloader
   &sys_reset    &none             &none             &none             &none             &none             &bt_2   &bt_3   &none              &none   &none   &none   &none   &none   &none   &none   &none            &sys_reset
   &none         &none             &none             &none             &none                               &bt_0   &bt_1   &out OUT_USB       &none   &none   &none           &none   &none   &none   &none            &none
